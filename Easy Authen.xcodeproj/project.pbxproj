@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F41B364D1EF0EDBF00C5EE3F /* JT.png in Resources */ = {isa = PBXBuildFile; fileRef = F41B364C1EF0EDBF00C5EE3F /* JT.png */; };
 		F4C7847F1EEFD7630066DC9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C7847E1EEFD7630066DC9E /* AppDelegate.swift */; };
 		F4C784811EEFD7630066DC9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C784801EEFD7630066DC9E /* ViewController.swift */; };
 		F4C784841EEFD7630066DC9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C784821EEFD7630066DC9E /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F41B364C1EF0EDBF00C5EE3F /* JT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = JT.png; path = ../../../../Desktop/JT.png; sourceTree = "<group>"; };
 		F4C7847B1EEFD7630066DC9E /* Easy Authen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Easy Authen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C7847E1EEFD7630066DC9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4C784801EEFD7630066DC9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		F4C7847D1EEFD7630066DC9E /* Easy Authen */ = {
 			isa = PBXGroup;
 			children = (
+				F41B364C1EF0EDBF00C5EE3F /* JT.png */,
 				F4C784901EEFDA4E0066DC9E /* BGSNRU.jpg */,
 				F4C7847E1EEFD7630066DC9E /* AppDelegate.swift */,
 				F4C784801EEFD7630066DC9E /* ViewController.swift */,
@@ -126,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41B364D1EF0EDBF00C5EE3F /* JT.png in Resources */,
 				F4C784891EEFD7630066DC9E /* LaunchScreen.storyboard in Resources */,
 				F4C784911EEFDA4E0066DC9E /* BGSNRU.jpg in Resources */,
 				F4C784861EEFD7630066DC9E /* Assets.xcassets in Resources */,
@@ -305,6 +309,7 @@
 				F4C7848F1EEFD7630066DC9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

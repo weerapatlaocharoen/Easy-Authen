@@ -13,10 +13,11 @@ class ViewController: UIViewController {
     //Implicit ประกาศตัวแปร
     var strUser: String?
     var strpass: String?
+    let dicUser = ["weerapat": "1234", "JoDekIT": "4321", "laochareon": "1234"]
     
     
     
-    
+    @IBOutlet weak var jtIcon: UIImageView!
     
     @IBOutlet weak var userTextField: UITextField!
     
@@ -48,18 +49,15 @@ class ViewController: UIViewController {
         //Call CheckSpace
         if CheckSpace(myString: strUser!) && CheckSpace(myString: strpass!)  {
             
-            print("No Space")
+            print("No Space")//No Space
             ShowMessage(strMessage: " ")
+            checkUserandPass(strUser: strUser!, strpass: strpass!)
+            
         }else
         {
-            print("Have Space")
-            ShowMessage(strMessage: "ไม่ถูกต้อง กรอกใหม่อีกครั้ง")
-        
-        /*if CheckSpace(myString: strpass!){
-            print("Password OK")
-            
-        }else{
-            print("Password ไม่ถูกต้อง กรอกใหม่อีกครั้ง")*/
+            print("Have Space")//Have Space
+            ShowMessage(strMessage: "ไม่ถูกต้องกรอกใหม่อีกครั้ง")
+
         
         }
         
@@ -69,6 +67,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     } //Mian Method
+    
+    func checkUserandPass(strUser: String, strpass: String) -> Void {
+        //Check User
+        if let testUser = dicUser[strUser] {
+            print("testUser ==> \(testUser)")
+        } else {
+        print("testUser nil")
+            ShowMessage(strMessage: "ไม่มี User" + strUser + "ในฐานข้อมูล")
+        }
+    }
     
     
     func CheckSpace(myString: String) -> Bool {
@@ -94,6 +102,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     } //didReceive
 
+    
+    
 
 }
 
