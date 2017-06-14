@@ -51,10 +51,12 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hCH-T1-9fs"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rj9-ea-TbX">
-                                <rect key="frame" x="33" y="287" width="302" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rj9-ea-TbX">
+                                <rect key="frame" x="36" y="286" width="303" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="1" green="0.056197598576545715" blue="0.0024801294784992933" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="1" green="0.97194346799999998" blue="0.43673711580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -63,9 +65,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="GzM-Lc-edX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="122" id="3Ar-Cy-ngl"/>
+                            <constraint firstItem="Rj9-ea-TbX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="96K-Kz-LMR"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="f2C-li-OVB" secondAttribute="bottom" id="HND-Kz-1vY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LAV-5l-NU6" secondAttribute="trailing" constant="92" id="LWg-d2-78r"/>
                             <constraint firstItem="LAV-5l-NU6" firstAttribute="top" secondItem="Y8d-J9-ci4" secondAttribute="bottom" constant="16" id="Myi-2t-KCY"/>
+                            <constraint firstItem="Rj9-ea-TbX" firstAttribute="top" secondItem="GzM-Lc-edX" secondAttribute="bottom" constant="25" id="OC6-YQ-KCI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GzM-Lc-edX" secondAttribute="trailing" constant="122" id="QqI-8e-rgD"/>
                             <constraint firstItem="Y8d-J9-ci4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="121" id="Slx-X2-sjn"/>
                             <constraint firstItem="f2C-li-OVB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XF0-Xs-iRr"/>
@@ -78,8 +82,14 @@
                             <constraint firstItem="6pZ-b1-CBH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="97" id="uVD-Pn-nuT"/>
                             <constraint firstAttribute="trailing" secondItem="f2C-li-OVB" secondAttribute="trailing" id="w5q-Is-6dn"/>
                             <constraint firstItem="Y8d-J9-ci4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="92" id="xGO-VF-A3N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rj9-ea-TbX" secondAttribute="trailing" constant="20" id="zrm-zU-Beg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="Rj9-ea-TbX" id="IWj-12-yCf"/>
+                        <outlet property="passwordTextField" destination="LAV-5l-NU6" id="pqw-GM-ebW"/>
+                        <outlet property="userTextField" destination="Y8d-J9-ci4" id="ro1-m9-3DG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
