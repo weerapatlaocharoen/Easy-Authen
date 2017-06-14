@@ -29,9 +29,11 @@ class ViewController: UIViewController {
     
     @IBAction func loginButton(_ sender: Any) {
         
+        messageLabel.text = " "
+        
         //Get Value From TextField
         strUser = userTextField.text
-    strpass = passwordTextField.text
+        strpass = passwordTextField.text
         
         print("User ==> \(strUser!)")
         print("Password ==> \(strpass!)")
@@ -44,13 +46,22 @@ class ViewController: UIViewController {
         print("intpass ==> \(intPass!)")
         
         //Call CheckSpace
-        if CheckSpace(myString: strUser!) {
-            print("User OK")
+        if CheckSpace(myString: strUser!) && CheckSpace(myString: strpass!)  {
+            
+            print("No Space")
+            ShowMessage(strMessage: " ")
         }else
         {
-            print("User No OK Blank User")
-        }
+            print("Have Space")
+            ShowMessage(strMessage: "ไม่ถูกต้อง กรอกใหม่อีกครั้ง")
         
+        /*if CheckSpace(myString: strpass!){
+            print("Password OK")
+            
+        }else{
+            print("Password ไม่ถูกต้อง กรอกใหม่อีกครั้ง")*/
+        
+        }
         
     }//ปุ่ม Login
 
@@ -71,7 +82,12 @@ class ViewController: UIViewController {
         
         return result
     }
-    
+    func ShowMessage(strMessage: String) -> Void {
+        messageLabel.text = strMessage
+        
+        
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
