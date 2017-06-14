@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     
     
     
+    
     @IBOutlet weak var jtIcon: UIImageView!
     
     @IBOutlet weak var userTextField: UITextField!
@@ -72,9 +73,17 @@ class ViewController: UIViewController {
         //Check User
         if let testUser = dicUser[strUser] {
             print("testUser ==> \(testUser)")
+            if strpass == testUser {
+                //Password True
+                ShowMessage(strMessage: "ยินดีต้อนรับ สู่ SNRU")
+            }else{
+                //Password False
+                ShowMessage(strMessage: "Password ไม่ถูกต้อง")
+            
+            }
         } else {
         print("testUser nil")
-            ShowMessage(strMessage: "ไม่มี User" + strUser + "ในฐานข้อมูล")
+            ShowMessage(strMessage: "ไม่มี" + strUser + "ในฐานข้อมูล")
         }
     }
     
